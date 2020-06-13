@@ -1,3 +1,4 @@
+#include <string.h>
 #include "parser.h"
 
 /*int flag = 0;*/
@@ -5,7 +6,7 @@
 
 outputs_e parserInput(const char* input)
 {
-	int static flag = 0;
+	static int flag = 0;
 	if (!strcmp(input, "Hello World!\n"))
 	{
 		if (flag == 0)

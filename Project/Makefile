@@ -1,11 +1,11 @@
 output: helloworld.o parser.o
-	g++ helloworld.o parser.o -o output
+	gcc helloworld.o parser.o -o output
 
 clean:
 	rm *.o output
 
-parser.o: parser.cpp parser.h
-	g++ -c parser.cpp
+parser.o: parser.c parser.h
+	gcc -c parser.c
 
-helloworld.o: helloworld.cpp
-	g++ -c helloworld.cpp
+helloworld.o: helloworld.c
+	gcc -c helloworld.c
